@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/played"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/won"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/drawed"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lost"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/scored"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/conceded"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/goalDifference"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/winPercent"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+        android:textSize="16sp" />
+</LinearLayout>

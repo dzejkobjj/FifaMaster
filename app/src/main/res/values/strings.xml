@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fifa Master</string>
+    <string name="add_game">Dodaj mecz</string>
+    <string name="table">Tabela</string>
+    <string name="history">Historia</string>
+    <string name="make_tournament">Utwórz turniej</string>
+    <string name="ball_img">ball.png</string>
+    <string name="cup_img">cup.png</string>
+    <string name="table_img">table.png</string>
+    <string name="list_img">list.png</string>
+    <string name="player1">Pierwszy gracz</string>
+    <string name="player2">Drugi gracz</string>
+    <string name="score">Wynik:</string>
+    <string name="add">Dodaj!</string>
+    <string name="player3">Trzeci gracz</string>
+    <string name="player4">Czwarty gracz</string>
+    <string name="game_added">Dodano mecz!</string>
+    <string name="set_fields_message">Uzupełnij wszystkie pola</string>
+    <string name="db_manager">DbManager</string>
+    <string name="delete">Usuń</string>
+</resources>

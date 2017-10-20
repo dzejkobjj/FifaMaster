@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.12"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/awayTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black" />
+</LinearLayout>

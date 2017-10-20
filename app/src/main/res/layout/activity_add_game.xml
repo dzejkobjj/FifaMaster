@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:paddingBottom="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:isScrollContainer="true"
+            android:paddingBottom="10dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+                <EditText
+                    android:id="@+id/homeScoreText"
+                    android:layout_width="60dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/awayScoreText"
+                    app:layout_constraintRight_toLeftOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/team1" />
+
+                <Button
+                    android:id="@+id/add2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="addPlayer"
+                    android:text="+"
+                    android:textSize="24sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/penaltiesCheckBox" />
+
+                <EditText
+                    android:id="@+id/awayScoreText"
+                    android:layout_width="60dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintLeft_toRightOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/team1" />
+
+                <Button
+                    android:id="@+id/add1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="addPlayer"
+                    android:text="+"
+                    android:textSize="24sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:onClick="addGame"
+                android:text="@string/add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/team2" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:text=":"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/team1" />
+
+            <CheckBox
+                android:id="@+id/penaltiesCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Karne"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeScoreText"
+                android:onClick="penatlyCheckBoxClicked" />
+
+            <EditText
+                android:id="@+id/homePenaltiesText"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number"
+                android:nextFocusDown="@+id/awayPenaltiesText"
+                android:textSize="14sp"
+                app:layout_constraintRight_toLeftOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/homeScoreText" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text=":"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/homeScoreText" />
+
+            <EditText
+                android:id="@+id/awayPenaltiesText"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toRightOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/awayScoreText" />
+
+                <LinearLayout
+                    android:id="@+id/team1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    app:layout_constraintHorizontal_bias="0.527"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/add1"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/team2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/add2"
+                    app:layout_constraintTop_toBottomOf="@+id/penaltiesCheckBox"></LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+</ScrollView>
